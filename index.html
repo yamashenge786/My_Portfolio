@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YAMASHENGE Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /* Typing Animation */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing { from { width: 0; } to { width: 100%; } }
+      @keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
+
+      /* Project image zoom effect */
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      /* Project heading hover color */
+      .heading a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .heading a:hover {
+        color: #ffbd39;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Nokwanda Buthelezi</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certificates</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Nokwanda Buthelezi</span></h1>
+
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = [
+                      'AI & Software Developer',
+                      'Data Analytics Engineer',
+
+                    
+                    ];
+
+                    let index = 0;
+                    function typeNext() {
+                      const text = typingTexts[index];
+                      let charIndex = 0;
+                      typingAnimationElement.textContent = '';
+                      const interval = setInterval(() => {
+                        typingAnimationElement.textContent += text[charIndex];
+                        charIndex++;
+                        if(charIndex === text.length) {
+                          clearInterval(interval);
+                          setTimeout(() => {
+                            index = (index + 1) % typingTexts.length;
+                            typeNext();
+                          }, 1000);
+                        }
+                      }, 150);
+                    }
+                    typeNext();
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row d-flex align-items-stretch">
+      
+      <!-- Profile Image -->
+      <div class="col-md-6 col-lg-5 d-flex">
+        <div class="img-about img d-flex align-items-stretch">
+          <div class="overlay">
+            <div class="row justify-content-center">
+              <div class="col-sm-12">
+                <div class="about-img">
+                  <img src="images/IMG_5193.jpg" class="img-fluid rounded b-shadow-a" alt="Nokwanda Buthelezi">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Description -->
+      <div class="col-md-6 col-lg-7">
+        <div class="about-description">
+          <h2 class="mb-3">About Me</h2>
+          <p>
+           I am a motivated Software Developer and Data Analytics enthusiast with hands-on experience in Python (Django), React.js, and Machine Learning. I specialize in transforming complex data into actionable insights through data cleaning, analysis, and visualization using tools like Excel, SQL, Python (Pandas, NumPy), and Power BI.
+
+Passionate about leveraging AI and data-driven solutions, I aim to tackle real-world challenges in healthcare, education, and agriculture. I enjoy building innovative applications and predictive models that make a tangible impact, combining my technical skills with a problem-solving mindset to create meaningful solutions.
+          </p>
+
+          <!-- Education Section -->
+          <div class="education mt-4">
+            <h3 class="mb-2">Education</h3>
+            <ul style="list-style: none; padding-left: 0;">
+              <li><strong>Advanced Diploma in Coomputer Science</strong> – Tshwane University of Technology (Current)</li>
+              <li><strong>National Diploma in Information Technology (Software Development)</strong> – Tshwane University of Technology (Completed 2024)</li>
+              <li><strong>Matric</strong> – Maceba Secondary School (Completed 2016)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Download CV Button -->
+              <div class="mt-4">
+                <a href="assests/Nokwanda_cv.pdf" class="btn btn-primary" download>Download CV</a>
+              </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Technical Skills Section -->
+<section class="ftco-section" id="skills-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Skills</h1>
+        <h2 class="mb-4">Technical Skills</h2>
+        <p>Here are the tools, frameworks, and technologies I work with:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Programming Languages -->
+      <div class="col-md-4 ftco-animate">
+        <div class="skill-box text-center p-4 shadow-sm rounded">
+          <h4>Programming Languages</h4>
+          <p>Python, C++, Java, JavaScript, HTML, CSS, SQL</p>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="col-md-4 ftco-animate">
+        <div class="skill-box text-center p-4 shadow-sm rounded">
+          <h4>Frameworks & Libraries</h4>
+          <p>Django, Flask, React.js, Node.js, Bootstrap, TailwindCSS</p>
+        </div>
+      </div>
+
+      <!-- AI / ML -->
+      <div class="col-md-4 ftco-animate">
+        <div class="skill-box text-center p-4 shadow-sm rounded">
+          <h4>AI & Data Science</h4>
+          <p>Machine Learning, Deep Learning, TensorFlow, Keras, OpenCV, Pandas, NumPy</p>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="col-md-4 ftco-animate mt-4">
+        <div class="skill-box text-center p-4 shadow-sm rounded">
+          <h4>Databases</h4>
+          <p>MySQL, SQLite3</p>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-md-4 ftco-animate mt-4">
+        <div class="skill-box text-center p-4 shadow-sm rounded">
+          <h4>Tools & Platforms</h4>
+          <p>Git/GitHub, Streamlit, Figma,  VS Code</p>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="col-md-4 ftco-animate mt-4">
+        <div class="skill-box text-center p-4 shadow-sm rounded">
+          <h4>Soft Skills</h4>
+          <p>Problem Solving, Team Collaboration, Project Management, Communication</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+  <section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Here are some of my featured projects with GitHub and live demo links.</p>
+      </div>
+    </div>
+
+    <div class="row d-flex">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/ai.jpg'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">Sentiment Analysis</a></h3>
+            <p>This project gives prediction on emotions through texts using Natural Language Processor to find out if text is positive , neutral , negative.</p>
+            <p>
+              <a href="https://github.com/Agristorm/sentimental-analysis" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://sentimentanalysis-xohxyzkgakxau33ww3tf6z.streamlit.app/" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	  <!-- Project 2 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/resume.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">AI Resume Builder</a></h3>
+            <p>The AI Resume Builder & CV Reviewer is an intelligent web application that helps users create professional resumes automatically and review existing CVs using AI</p>
+            <p>
+              <a href="https://github.com/Agristorm/AI-Resume-Biulder" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://bmokgola.github.io/resume-/" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+     <!-- Project 2 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/chatbot.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">Smart AI Chatbot</a></h3>
+            <p>Your Smart AI Chatbot is an educational chatbot built using the no-code platform Botpress.
+It is designed to teach foundational AI concepts to beginners through interactive dialogue, Q&A sessions, and multimedia support.</p>
+            <p>
+              <a href="https://github.com/yamashenge/Smart-AI-Chatbot" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/21/11/20250721115257-1404MXLO.json" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/alex.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">AI Study Buddy</a></h3>
+            <p>An accessible Retrieval Augmented Generation-powered chatbot with domain-specific knowledge, summarization, and speech support.</p>
+            <p>
+              <a href="https://github.com/Agristorm/AI-Study-buddy" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://ai-study-buddy-xi.vercel.app/" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/apple.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">Apple Disease Detector</a></h3>
+            <p>Detects apple crop diseases using image classification and deep learning.</p>
+            <p>
+              <a href="https://github.com/Agristorm/Apple-Disease-Detector-CropCareAI-" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://blog-thin-05039763.figma.site/" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	  <!-- Project 5 -->
+      <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/adult.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">Adult Census Bias Model</a></h3>
+            <p>This project aims to build a machine learning model that predicts whether an individual earns more than $50K per year (binary classification).</p>
+            <p>
+              <a href="https://github.com/Agristorm/Adult-Census-Bias-Analysis-Model" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://colab.research.google.com/drive/1kSP9VCLymslnjaquDqMS8z0tgTykR80Q?usp=sharing" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+	  <!-- Project 5 -->
+      <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="https://smartedu-demo.vercel.app/" class="block-20 zoom-effect" style="background-image: url('images/smartedu.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://smartedu-demo.vercel.app/">SmartEdu Gr12 Content Creator</a></h3>
+            <p>Generates Grade 12 educational content automatically using AI.</p>
+            <p>
+              <a href="https://github.com/Agristorm/SmartEdu-Gr12-contentCreatorr" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://www.figma.com/make/dS0zWAWOKto8NYDY5rmImF/SmartEdu-Grade-12-Content-Generator?node-id=0-1&t=U4gIYRMkQ4APVynG-0&fullscreen=1" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	   <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="https://smartedu-demo.vercel.app/" class="block-20 zoom-effect" style="background-image: url('images/plant.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://smartedu-demo.vercel.app/">Plant Disease Detection</a></h3>
+            <p>An AI-powered application that helps farmers and gardeners identify plant diseases early by analyzing leaf images.</p>
+            <p>
+              <a href="https://github.com/yamashenge/Plant-Disease-Detection-AI-" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://zwvwrskfzmtetpmhbmxkbr.streamlit.app/" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	        <!-- Project 5 -->
+      <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/smart.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">SmartEdu Online Tutor</a></h3>
+            <p>📘 App Summary This Online Tutor is an AI-powered learning platform for South African students, aligned with the CAPS curriculum. It generates study guides, lesson plans, quizzes, and summaries for subjects from primary to Grade 12, helping learners access personalized, CAPS-approved content instantly.</p>
+            <p>
+              <a href="https://github.com/yamashenge/SmartEdu-online-Tutor" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	   <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/munchies.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">Munchies</a></h3>
+            <p>Munchies is an online clothing store that sells casual apparel such as T-shirts, hoodies, and caps. The website provides a clean, simple, and navigable interface to showcase products and guide users to specific categories.</p>
+            <p>
+              <a href="https://github.com/yamashenge/smart-edu-generator" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://www.figma.com/make/dS0zWAWOKto8NYDY5rmImF/SmartEdu-Grade-12-Content-Generator?node-id=0-1&t=U4gIYRMkQ4APVynG-0&fullscreen=1" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	   <div class="col-md-4 d-flex ftco-animate mt-4">
+        <div class="blog-entry justify-content-end">
+          <a href="" class="block-20 zoom-effect" style="background-image: url('images/sms.png'); height:250px; background-size: cover;"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="">SMS Spam Classifier</a></h3>
+            <p>Generates Grade 12 educational content automatically using AI.</p>
+            <p>
+              <a href="" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="" class="btn btn-outline-success btn-sm">Live Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- Certificates Section -->
+    <section class="ftco-section" id="certificate-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Certificates</h1>
+        <h2 class="mb-4">Certificates</h2>
+        <p>Here are my professional development and AI certificates. Click below to view or download them.</p>
+      </div>
+    </div>
+
+    <!-- Certificates Grid -->
+    <div class="row justify-content-center">
+      
+      <!-- Certificate 1 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>AI for Everyone</h4>
+          <a href="certificates/AI for everyone.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>Introduction to Generative AI</h4>
+          <a href="certificates/genAI.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>Prompt Engineering</h4>
+          <a href="certificates/prompt eng.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>Trustworthy AI</h4>
+          <a href="certificates/trustworthy ai.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+      <!-- Certificate 5 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>Artificial Intelligence on Microsoft Azure</h4>
+          <a href="certificates/AI micrososft Azure.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+      <!-- Certificate 6 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>Introduction to Responsible AI</h4>
+          <a href="certificates/Responsible AI.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+      <!-- Certificate 7 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="blog-entry shadow-sm p-3 rounded text-center w-100">
+          <h4>Generative AI with LLMs</h4>
+          <a href="certificates/LLM.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-2" download>Download</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- Contact Section -->
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Reach out via the details below!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>170 fawcus, jeppestown 2094</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://0101010101">+27 79 350 0786</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email</h3>
+              <p><a href="mailto:kwandashenge786@gmail.com">kwandashenge786@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+            <li class="ftco-animate normal-txt">Find me on:</li>
+            <li class="ftco-animate"><a href="https://www.linkedin.com/in/nokwanda-buthelezi-192b99245/"><span class="icon-linkedin"></span></a></li>  
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
